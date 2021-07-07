@@ -1,0 +1,18 @@
+/////////////////////////////////////////////////////////////////
+
+const postroutes = require("./data/routes/postroutes")
+
+const express = require('express');
+const server = express();
+
+const port = 4040
+
+server.use("/api",postroutes)
+
+server.listen(port,() => console.log("The Server Is Active")) 
+
+/////////////////////////////////////////////////////////////////
+
+    /* Prepped To Begin Working */
+
+/////////////////////////////////////////////////////////////////
